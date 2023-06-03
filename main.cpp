@@ -5,10 +5,12 @@
 ** main
 */
 
+#include "pokemon_cpp.hpp"
 #include <iostream>
 
 int main()
 {
-    std::cout << "START POKEMON_CPP !\n";
+    window_t p;
+    start_menu(&p);
     return 0;
 }
