@@ -1,0 +1,21 @@
+# --- Build / Binaires / Objets ---
+build/
+bin/
+*.o
+*.obj
+*.exe
+*.out
+
+# --- Projets CMake (si vous utilisez CMake) ---
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# --- Éditeurs courants ---
+.vscode/
+*.swp
+*.swo
+
+# --- Fichiers logs éventuels ---
+*.log
