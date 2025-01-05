@@ -1,16 +1,7 @@
-/*
-** EPITECH PROJECT, 2023
-** pokemon_cpp
-** File description:
-** main
-*/
+#include "pokemon_app.hpp"
 
-#include "pokemon_cpp.hpp"
-#include <iostream>
-
-int main()
-{
-    window_t p;
-    start_menu(&p);
+int main() {
+    PokemonApp app;
+    app.run();
     return 0;
 }

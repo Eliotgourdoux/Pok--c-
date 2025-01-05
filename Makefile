@@ -7,7 +7,7 @@
 
 CC = g++
 CPPFLAGS = -Wall -Wextra -I include
-SFMLFLAGS = -lsfml-graphics -lsfml-window -lsfml-system
+RAYLIBFLAGS = -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 
 SRC = main.cpp \
 	$(wildcard src/*.cpp)
@@ -18,7 +18,7 @@ NAME = pokemon_cpp
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME) $(CPPFLAGS) $(SFMLFLAGS) -g3
+	$(CC) $(OBJ) -o $(NAME) $(CPPFLAGS) $(RAYLIBFLAGS) -g3
 
 clean:
 	rm -f $(OBJ)
